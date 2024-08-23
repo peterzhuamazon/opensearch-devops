@@ -1,0 +1,13 @@
+name: Tes1t
+
+on:
+  push:
+    branches:
+      - weird-jdk-run
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: env
